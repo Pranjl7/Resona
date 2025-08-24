@@ -142,3 +142,8 @@ Heart.addEventListener("click", () => {
         Heart.src = "assets/Blackheart.png";
     }
 });
+
+
+// ADDING CLASSES THROUGH JS....
+let Element1 = document.querySelector(".main-footer")
+Element1.classList.add("flex")
