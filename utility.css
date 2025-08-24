@@ -1,0 +1,94 @@
+.flex {
+    display: flex;
+}
+
+.justify-content {
+    justify-content: center;
+}
+
+.align-items {
+    align-items: center;
+}
+
+.combo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.br {
+    border-radius: 50rem;
+}
+
+.width {
+    width: 0.8125rem;
+}
+
+.img-padd {
+    padding: 0 0.3125rem;
+    filter: invert(1);
+    cursor: pointer;
+}
+
+.play {
+    width: 1.125rem;
+}
+
+.Blackheart {
+    width: 0.71875rem;
+}
+
+.pos {
+    position: relative;
+    top: 0.125rem;
+}
+
+.h4-01 {
+    font-size: 0.9375rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+.h4-1 {
+    font-size: 0.625rem;
+    padding-bottom: 0.125rem;
+    text-indent: 0.125rem;
+    color: #ffff;
+}
+
+.p-1 {
+    font-size: 0.59375rem;
+    text-indent: 0.125rem;
+}
+
+.h4-2 {
+    font-size: 0.625rem;
+    padding-bottom: 0.125rem;
+    text-indent: 0.4375rem;
+    color: #ffff;
+}
+
+.p-2 {
+    font-size: 0.59375rem;
+    text-indent: 0.4375rem;
+}
+
+.h4-3 {
+    font-size: 0.6875rem;
+}
+
+.p-3 {
+    font-size: 0.5rem;
+}
+
+.num-size {
+    font-size: 0.75rem;
+}
+
+.Time {
+    font-size: 0.625rem;
+}
