@@ -1,7 +1,6 @@
 # Resona 🎵
 
 ![Resona UI](assets/SS-1.png)
-![Resona Playing Music](assets/SS-2.png)
 
 Resona is a **web-based music application** where users can enjoy a limited collection of songs.  
 This project is currently **client-side only** and focuses on UI design and user experience.  
