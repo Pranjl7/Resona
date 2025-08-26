@@ -21,7 +21,6 @@ You can view the live project [here](https://resona-wheremusicresonates.netlify.
 - Planned future enhancements:
   - Dynamic song loading from API
   - Playlist creation
-  - Improved audio controls
   - Responsive mobile-friendly design
 
 ---
