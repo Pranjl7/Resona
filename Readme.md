@@ -33,3 +33,10 @@ Follow these steps to clone and run the project locally:
 ```bash
 git clone https://github.com/Pranjl7/Resona.git
 cd Resona
+```
+
+## 🤝 Contributing
+  Contributions, issues, and feature requests are welcome! Feel free to check the issues page.
+
+## 📜 License
+Distributed under the MIT License.
