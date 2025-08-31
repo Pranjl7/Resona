@@ -9,11 +9,6 @@ As a **UI design project**, it showcases a modern music streaming interface, inc
 
 ---
 
-## 🌐 Project URL
-You can view the live project [here](https://resona-wheremusicresonates.netlify.app/)
-
----
-
 ## 🚀 Features
 - Play songs directly from the interface.
 - Explore popular artists.
