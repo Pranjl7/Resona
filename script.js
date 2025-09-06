@@ -12,7 +12,7 @@ let seekbar = document.querySelector(".seekbar");
 let Heart = document.getElementById("heart");
 
 // ---------------------------
-// SONG LIST (replace with your own files)
+// SONG LIST
 let Songs = [
     "songs/Humble.mp3",
     "songs/White Ferrari.mp3",
