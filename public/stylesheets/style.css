@@ -167,7 +167,7 @@ nav {
     font-size: 0.65625rem;
 }
 
-.Login>button {
+.Login>a>button {
     padding: 0.5625rem 1.25rem;
     border-radius: 3.125rem;
     font-size: 0.6875rem;
@@ -177,7 +177,7 @@ nav {
     transition: 100ms ease;
 }
 
-.Login>button:hover {
+.Login>a>button:hover {
     padding: 0.60625rem 1.275rem;
     font-size: 0.7rem;
 }
