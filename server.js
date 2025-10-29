@@ -16,7 +16,6 @@ app.use(express.urlencoded({ extended: true }))
 app.set('view engine', 'ejs')
 
 async function main() {
-    console.log(process.env.MONGO_URL)
     await mongoose.connect(process.env.MONGO_URL)
     app.listen(port, () => {
         console.log(`Server running at http://localhost:${port}`)
