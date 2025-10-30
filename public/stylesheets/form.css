@@ -1,0 +1,72 @@
+.Eform {
+    border: 0.5px solid rgb(153, 150, 150);
+    border-radius: 5px;
+    width: 30vw;
+    height: 68vh;
+    margin: auto;
+    margin-top: 15vh;
+    color: white;
+    padding-top: 10px;
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+}
+
+.title>h2{
+    font-size: 14px;
+    text-decoration: underline;
+}
+
+.title>img{
+    width: 27px;
+    height: 27px;
+}
+
+.Eform>form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.Eform>form>label {
+    width: 89%;
+    font-size: 14px;
+    margin-top: 4px;
+}
+
+.Eform>form>input {
+    height: 32px;
+    width: 85%;
+    border: 0.5px solid rgb(139, 136, 136);
+    border-radius: 4px;
+    outline: none;
+    padding-left: 12px;
+    background: transparent;
+    caret-color: white;
+    color: white;
+    cursor: pointer;
+}
+
+.Eform>form>button {
+    height: 35px;
+    width: 90%;
+    border-radius: 50px;
+    font-weight: bold;
+    border: none;
+    margin-top: 18px;
+    margin-bottom: 7px;
+    cursor: pointer;
+}
+
+.Eform>form>p {
+    font-size: 12px;
+}
+
+.Eform>form>p>a {
+    color: rgb(170, 167, 167);
+}

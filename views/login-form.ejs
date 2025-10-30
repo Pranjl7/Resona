@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resona</title>
+    <link rel="stylesheet" href="/stylesheets/form.css">
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <link rel="stylesheet" href="/stylesheets/utility.css">
+
+</head>
+
+<body>
+    <div id="login-form" class="Eform">
+        <form method="POST" action="/login">
+            <div class="title">
+                <h2>Welocome, To Resona</h2>
+                <img src="/favicon.ico" alt="">
+            </div>
+            <label for="login-username">Username</label>
+            <input type="text" name="username" id="login-username" placeholder="Username">
+            <label for="login-email">Email</label>
+            <input type="email" name="email" id="login-email" placeholder="Email">
+            <label for="login-password">Password</label>
+            <input type="password" name="password" id="login-password" placeholder="Password">
+            <button type="submit">Login</button>
+            <p>Don't have an account?&nbsp;<a href="/signup">Signup</a></p>
+        </form>
+    </div>
+
+    <script src="/javascripts/form.js"></script>
+    <script src="/javascripts/script.js"></script>
+</body>
+
+</html>

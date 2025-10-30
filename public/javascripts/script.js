@@ -14,11 +14,11 @@ let Heart = document.getElementById("heart");
 // ---------------------------
 // SONG LIST
 let Songs = [
-    "songs/Humble.mp3",
-    "songs/White Ferrari.mp3",
-    "songs/Desires.mp3",
-    "songs/Luther.mp3",
-    "songs/Moonlight.mp3"
+    "../songs/Humble.mp3",
+    "../songs/White Ferrari.mp3",
+    "../songs/Desires.mp3",
+    "../songs/Luther.mp3",
+    "../songs/Moonlight.mp3"
 ];
 // ---------------------------
 
@@ -37,40 +37,40 @@ function Loadmusic(Song, i) {
     imgs = Array.from(document.getElementsByClassName("icon-img"));
 
     Loadmusic(Songs[0], 0);
-    imgs[0].src = "assets/play-scroller.png";
-    play.src = "assets/play.png";
+    imgs[0].src = "../assets/play-scroller.png";
+    play.src = "../assets/play.png";
 
     // FORWARD BUTTON
     forward.addEventListener("click", () => {
         let nextindex = (currentindex + 1) % Songs.length;
         Playmusic(Songs[nextindex], nextindex);
-        imgs.forEach(img => img.src = "assets/play-scroller.png");
-        imgs[nextindex].src = "assets/pause-scroller.png";
+        imgs.forEach(img => img.src = "../assets/play-scroller.png");
+        imgs[nextindex].src = "../assets/pause-scroller.png";
     });
 
     // BACKWARD BUTTON
     backward.addEventListener("click", () => {
         let previousindex = (currentindex - 1 + Songs.length) % Songs.length;
         Playmusic(Songs[previousindex], previousindex);
-        imgs.forEach(img => img.src = "assets/play-scroller.png");
-        imgs[previousindex].src = "assets/pause-scroller.png";
+        imgs.forEach(img => img.src = "../assets/play-scroller.png");
+        imgs[previousindex].src = "../assets/pause-scroller.png";
     });
 
     // SHUFFLE BUTTON
     shuffle.addEventListener("click", () => {
         let r = Math.floor(Math.random() * Songs.length);
         Playmusic(Songs[r], r);
-        imgs.forEach(img => img.src = "assets/play-scroller.png");
-        imgs[r].src = "assets/pause-scroller.png";
+        imgs.forEach(img => img.src = "../assets/play-scroller.png");
+        imgs[r].src = "../assets/pause-scroller.png";
     });
 
     // SONG ENDED
     currentsong.addEventListener("ended", () => {
         let Forwarding = (currentindex + 1) % Songs.length;
         Playmusic(Songs[Forwarding], Forwarding);
-        imgs.forEach(img => img.src = "assets/play-scroller.png");
-        imgs[Forwarding].src = "assets/pause-scroller.png";
-        play.src = "assets/pause.png";
+        imgs.forEach(img => img.src = "../assets/play-scroller.png");
+        imgs[Forwarding].src = "../assets/pause-scroller.png";
+        play.src = "../assets/pause.png";
     });
 
     // ICON CLICK
@@ -78,13 +78,13 @@ function Loadmusic(Song, i) {
         e.addEventListener("click", () => {
             if (currentsong.paused || currentindex !== i) {
                 Playmusic(Songs[i], i);
-                imgs.forEach(img => img.src = "assets/play-scroller.png");
-                imgs[i].src = "assets/pause-scroller.png";
-                play.src = "assets/pause.png";
+                imgs.forEach(img => img.src = "../assets/play-scroller.png");
+                imgs[i].src = "../assets/pause-scroller.png";
+                play.src = "../assets/pause.png";
             } else {
                 currentsong.pause();
-                imgs[i].src = "assets/play-scroller.png";
-                play.src = "assets/play.png";
+                imgs[i].src = "../assets/play-scroller.png";
+                play.src = "../assets/play.png";
             }
         });
     });
@@ -95,12 +95,12 @@ play.addEventListener("click", () => {
     if (currentindex === -1) return;
     if (currentsong.paused) {
         currentsong.play();
-        play.src = "assets/pause.png";
-        imgs[currentindex].src = "assets/pause-scroller.png";
+        play.src = "../assets/pause.png";
+        imgs[currentindex].src = "../assets/pause-scroller.png";
     } else {
         currentsong.pause();
-        play.src = "assets/play.png";
-        imgs[currentindex].src = "assets/play-scroller.png";
+        play.src = "../assets/play.png";
+        imgs[currentindex].src = "../assets/play-scroller.png";
     }
 });
 
@@ -137,9 +137,9 @@ seekbar.addEventListener("click", (e) => {
 // HEART CLICK
 Heart.addEventListener("click", () => {
     if (Heart.src.includes("Blackheart.png")) {
-        Heart.src = "assets/Redheart.png";
+        Heart.src = "../assets/Redheart.png";
     } else {
-        Heart.src = "assets/Blackheart.png";
+        Heart.src = "../assets/Blackheart.png";
     }
 });
 
